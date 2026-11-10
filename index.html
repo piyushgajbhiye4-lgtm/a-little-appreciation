@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7eee9">
+<title>A Little Appreciation</title>
+<style>
+:root{--ink:#443735;--muted:#806f6b;--rose:#b97978;--cream:#fffaf7;--line:#eadbd5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f7eee9;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+.hero{min-height:88vh;display:grid;place-items:center;text-align:center;padding:55px 22px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 15%,#fff 0 3%,transparent 30%),linear-gradient(145deg,#f9f0eb,#eadbd5)}
+.hero:before,.hero:after{content:"✦";position:absolute;color:#c99b96;opacity:.35;font-size:35px}
+.hero:before{top:14%;left:12%}.hero:after{right:13%;bottom:17%}
+.hero-inner{max-width:760px}
+.eyebrow{font:12px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(42px,8vw,76px);font-weight:400;line-height:1.05;margin:22px 0;color:#5b4140}
+h1 em{color:var(--rose);font-weight:400}
+.intro{font-size:19px;line-height:1.8;color:var(--muted);max-width:570px;margin:0 auto 30px}
+.scroll{display:inline-block;color:#fff;background:#9f6d6b;text-decoration:none;padding:14px 25px;border-radius:30px;font:13px Arial,sans-serif;letter-spacing:1px;box-shadow:0 8px 22px #9f6d6b33}
+section{padding:75px 20px}
+.wrap{max-width:1050px;margin:auto}
+.section-title{text-align:center;font-size:35px;font-weight:400;margin:0 0 12px}
+.sub{text-align:center;color:var(--muted);font:14px Arial,sans-serif;letter-spacing:.5px;margin:0 0 38px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+.photo{margin:0;background:#fff;padding:10px 10px 17px;box-shadow:0 12px 32px #503b3518;border:1px solid #fff}
+.photo:nth-child(2){margin-top:35px}
+.photo img{width:100%;height:390px;object-fit:cover;display:block}
+.photo figcaption{text-align:center;padding-top:13px;color:#927b75;font-size:15px;font-style:italic}
+.note{background:#fffaf7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.note-card{max-width:720px;margin:auto;text-align:center;padding:42px 34px;border:1px solid var(--line);background:#fffdfb}
+.note-card .heart{font-size:25px;color:var(--rose)}
+.note-card p{font-size:20px;line-height:1.9;color:#6d5955;margin:20px 0}
+.signature{font-style:italic;color:var(--rose);font-size:19px}
+.footer{text-align:center;padding:35px 15px;color:#9a8580;font:12px Arial,sans-serif;letter-spacing:1px}
+@media(max-width:700px){.gallery{grid-template-columns:1fr;max-width:430px;margin:auto;gap:20px}.photo:nth-child(2){margin-top:0}.photo img{height:auto;max-height:520px;object-fit:contain;background:#f4eeeb}.intro{font-size:17px}section{padding:58px 18px}.note-card{padding:30px 20px}.note-card p{font-size:18px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">just a little note</div>
+    <h1>Some people make<br>ordinary days feel <em>special.</em></h1>
+    <p class="intro">This is a small page for someone whose smile, warmth and presence deserve a little appreciation. No big occasion — just a reminder that you're genuinely lovely.</p>
+    <a class="scroll" href="#memories">A LITTLE SOMETHING FOR YOU ↓</a>
+  </div>
+</header>
+
+<section id="memories">
+  <div class="wrap">
+    <h2 class="section-title">A few lovely moments</h2>
+    <p class="sub">A little collection, because one photo wasn't enough.</p>
+    <div class="gallery">
+      <figure class="photo"><img src="photo-1.png" alt="A lovely dressed-up portrait"><figcaption>Grace in every little detail</figcaption></figure>
+      <figure class="photo"><img src="photo-2.jpg" alt="A warm, candid portrait"><figcaption>That effortless charm</figcaption></figure>
+      <figure class="photo"><img src="photo-3.jpg" alt="A playful black and white portrait"><figcaption>A smile worth remembering</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="note">
+  <div class="note-card">
+    <div class="heart">♡</div>
+    <h2 class="section-title">A note for you</h2>
+    <p>You're beautiful, of course — but what makes you special goes beyond a picture. It's the little things: your expressions, your energy, and the way you make a moment feel lighter.</p>
+    <p>I'm glad our paths crossed. Keep being your wonderful self, and never forget how appreciated you are.</p>
+    <div class="signature">With a little admiration ✨</div>
+  </div>
+</section>
+<footer class="footer">MADE WITH GOOD THOUGHTS · JUST FOR YOU</footer>
+</body>
+</html>
